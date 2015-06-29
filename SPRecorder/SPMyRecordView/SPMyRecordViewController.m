@@ -69,6 +69,8 @@
 - (void)tableView:(nonnull UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        SPRecordDataModel *data = [audioArray objectAtIndex:indexPath.row];
+        [[SPGlobalData shareInstance].dbManager deleteRecordInfoWithAddr:data.recordAddr];
         [audioArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
