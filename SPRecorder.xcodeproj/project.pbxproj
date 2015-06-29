@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F322891193328DF305E47A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E873DB11C2B94ED4DF37C7EE /* libPods.a */; };
+		5B18CD441B40C16000EB93F5 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B451C371B40BF5200ECB952 /* libopencore-amrnb.a */; };
+		5B18CD451B40C16000EB93F5 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B451C381B40BF5200ECB952 /* libopencore-amrwb.a */; };
+		5B18CD481B40C24500EB93F5 /* SPRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B18CD471B40C24500EB93F5 /* SPRecordHUD.m */; };
+		5B304C481B40AF86003FDEF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B304C471B40AF86003FDEF9 /* main.m */; };
+		5B304C4B1B40AF86003FDEF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B304C4A1B40AF86003FDEF9 /* AppDelegate.m */; };
+		5B304C4E1B40AF86003FDEF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B304C4D1B40AF86003FDEF9 /* ViewController.m */; };
+		5B304C511B40AF86003FDEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B304C4F1B40AF86003FDEF9 /* Main.storyboard */; };
+		5B304C531B40AF86003FDEF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B304C521B40AF86003FDEF9 /* Assets.xcassets */; };
+		5B304C561B40AF86003FDEF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B304C541B40AF86003FDEF9 /* LaunchScreen.storyboard */; };
+		5B304C611B40AF86003FDEF9 /* SPRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B304C601B40AF86003FDEF9 /* SPRecorderTests.m */; };
+		5B304C6C1B40AF86003FDEF9 /* SPRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B304C6B1B40AF86003FDEF9 /* SPRecorderUITests.m */; };
+		5B304C931B40AFE6003FDEF9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B304C921B40AFE6003FDEF9 /* AVFoundation.framework */; };
+		5B451C171B40B7CD00ECB952 /* SPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C161B40B7CD00ECB952 /* SPMainViewController.m */; };
+		5B451C1D1B40B8EE00ECB952 /* SPMyRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C1C1B40B8EE00ECB952 /* SPMyRecordViewController.m */; };
+		5B451C201B40B90600ECB952 /* SPMyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C1F1B40B90600ECB952 /* SPMyProfileViewController.m */; };
+		5B451C231B40B91F00ECB952 /* SPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C221B40B91F00ECB952 /* SPAboutViewController.m */; };
+		5B451C261B40B9FD00ECB952 /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C251B40B9FD00ECB952 /* SPBaseViewController.m */; };
+		5B451C2C1B40BA1600ECB952 /* CustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C291B40BA1600ECB952 /* CustomBarItem.m */; };
+		5B451C2D1B40BA1600ECB952 /* UINavigationItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C2B1B40BA1600ECB952 /* UINavigationItem+CustomItem.m */; };
+		5B451C411B40BF5200ECB952 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C311B40BF5200ECB952 /* amrFileCodec.mm */; };
+		5B451C421B40BF5200ECB952 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C331B40BF5200ECB952 /* wav.mm */; };
+		5B451C431B40BF5200ECB952 /* ChatCacheFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C351B40BF5200ECB952 /* ChatCacheFileUtil.m */; };
+		5B451C461B40BF5200ECB952 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B451C401B40BF5200ECB952 /* VoiceConverter.mm */; };
+		5B451C481B40BFC400ECB952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B451C471B40BFC400ECB952 /* UIKit.framework */; };
+		5B451C4A1B40BFCC00ECB952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B451C491B40BFCC00ECB952 /* Foundation.framework */; };
+		5B4F71071B40B23D00FBB992 /* SPLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F71061B40B23D00FBB992 /* SPLeftMenuViewController.m */; };
+		5BD8D33F1B40D3DF008EE53E /* SPDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8D33E1B40D3DF008EE53E /* SPDBManager.m */; };
+		5BD8D3421B40D473008EE53E /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8D3411B40D473008EE53E /* NSString+Additions.m */; };
+		5BD8D3461B40D5DC008EE53E /* SPRecordDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8D3451B40D5DC008EE53E /* SPRecordDataModel.m */; };
+		5BD8D3491B40DB50008EE53E /* SPRecordTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8D3481B40DB50008EE53E /* SPRecordTableCell.m */; };
+		5BD8D34C1B40DF11008EE53E /* SPGlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8D34B1B40DF11008EE53E /* SPGlobalData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B304C5D1B40AF86003FDEF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B304C3B1B40AF85003FDEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B304C421B40AF85003FDEF9;
+			remoteInfo = SPRecorder;
+		};
+		5B304C681B40AF86003FDEF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B304C3B1B40AF85003FDEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B304C421B40AF85003FDEF9;
+			remoteInfo = SPRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B18CD461B40C24500EB93F5 /* SPRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRecordHUD.h; sourceTree = "<group>"; };
+		5B18CD471B40C24500EB93F5 /* SPRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRecordHUD.m; sourceTree = "<group>"; };
+		5B304C431B40AF86003FDEF9 /* SPRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B304C471B40AF86003FDEF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B304C491B40AF86003FDEF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B304C4A1B40AF86003FDEF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B304C4C1B40AF86003FDEF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B304C4D1B40AF86003FDEF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B304C501B40AF86003FDEF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B304C521B40AF86003FDEF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B304C551B40AF86003FDEF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B304C571B40AF86003FDEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B304C5C1B40AF86003FDEF9 /* SPRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B304C601B40AF86003FDEF9 /* SPRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRecorderTests.m; sourceTree = "<group>"; };
+		5B304C621B40AF86003FDEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B304C671B40AF86003FDEF9 /* SPRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B304C6B1B40AF86003FDEF9 /* SPRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRecorderUITests.m; sourceTree = "<group>"; };
+		5B304C6D1B40AF86003FDEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B304C921B40AFE6003FDEF9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B451C0C1B40B4B400ECB952 /* SPRecorderPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRecorderPrefixHeader.pch; sourceTree = "<group>"; };
+		5B451C151B40B7CD00ECB952 /* SPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewController.h; sourceTree = "<group>"; };
+		5B451C161B40B7CD00ECB952 /* SPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewController.m; sourceTree = "<group>"; };
+		5B451C1B1B40B8EE00ECB952 /* SPMyRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMyRecordViewController.h; path = SPMyRecordView/SPMyRecordViewController.h; sourceTree = "<group>"; };
+		5B451C1C1B40B8EE00ECB952 /* SPMyRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMyRecordViewController.m; path = SPMyRecordView/SPMyRecordViewController.m; sourceTree = "<group>"; };
+		5B451C1E1B40B90600ECB952 /* SPMyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMyProfileViewController.h; path = SPMyProfileView/SPMyProfileViewController.h; sourceTree = "<group>"; };
+		5B451C1F1B40B90600ECB952 /* SPMyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMyProfileViewController.m; path = SPMyProfileView/SPMyProfileViewController.m; sourceTree = "<group>"; };
+		5B451C211B40B91F00ECB952 /* SPAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPAboutViewController.h; path = SPAboutView/SPAboutViewController.h; sourceTree = "<group>"; };
+		5B451C221B40B91F00ECB952 /* SPAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPAboutViewController.m; path = SPAboutView/SPAboutViewController.m; sourceTree = "<group>"; };
+		5B451C241B40B9FD00ECB952 /* SPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPBaseViewController.h; path = SPBaseView/SPBaseViewController.h; sourceTree = "<group>"; };
+		5B451C251B40B9FD00ECB952 /* SPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPBaseViewController.m; path = SPBaseView/SPBaseViewController.m; sourceTree = "<group>"; };
+		5B451C281B40BA1600ECB952 /* CustomBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarItem.h; sourceTree = "<group>"; };
+		5B451C291B40BA1600ECB952 /* CustomBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarItem.m; sourceTree = "<group>"; };
+		5B451C2A1B40BA1600ECB952 /* UINavigationItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomItem.h"; sourceTree = "<group>"; };
+		5B451C2B1B40BA1600ECB952 /* UINavigationItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomItem.m"; sourceTree = "<group>"; };
+		5B451C301B40BF5200ECB952 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		5B451C311B40BF5200ECB952 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		5B451C321B40BF5200ECB952 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		5B451C331B40BF5200ECB952 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		5B451C341B40BF5200ECB952 /* ChatCacheFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCacheFileUtil.h; sourceTree = "<group>"; };
+		5B451C351B40BF5200ECB952 /* ChatCacheFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCacheFileUtil.m; sourceTree = "<group>"; };
+		5B451C371B40BF5200ECB952 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		5B451C381B40BF5200ECB952 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		5B451C3A1B40BF5200ECB952 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		5B451C3B1B40BF5200ECB952 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		5B451C3D1B40BF5200ECB952 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		5B451C3E1B40BF5200ECB952 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		5B451C3F1B40BF5200ECB952 /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		5B451C401B40BF5200ECB952 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		5B451C471B40BFC400ECB952 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B451C491B40BFCC00ECB952 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B4F71021B40B0AE00FBB992 /* SPBlockTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBlockTypeDef.h; sourceTree = "<group>"; };
+		5B4F71031B40B0AE00FBB992 /* SPGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGlobalDefine.h; sourceTree = "<group>"; };
+		5B4F71051B40B23D00FBB992 /* SPLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLeftMenuViewController.h; sourceTree = "<group>"; };
+		5B4F71061B40B23D00FBB992 /* SPLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLeftMenuViewController.m; sourceTree = "<group>"; };
+		5BD8D33D1B40D3DF008EE53E /* SPDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDBManager.h; path = SPManageMod/SPDBManager.h; sourceTree = "<group>"; };
+		5BD8D33E1B40D3DF008EE53E /* SPDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDBManager.m; path = SPManageMod/SPDBManager.m; sourceTree = "<group>"; };
+		5BD8D3401B40D473008EE53E /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Additions.h"; path = "Additions/NSString+Additions.h"; sourceTree = "<group>"; };
+		5BD8D3411B40D473008EE53E /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Additions.m"; path = "Additions/NSString+Additions.m"; sourceTree = "<group>"; };
+		5BD8D3441B40D5DC008EE53E /* SPRecordDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPRecordDataModel.h; path = SPManageMod/SPRecordDataModel.h; sourceTree = "<group>"; };
+		5BD8D3451B40D5DC008EE53E /* SPRecordDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPRecordDataModel.m; path = SPManageMod/SPRecordDataModel.m; sourceTree = "<group>"; };
+		5BD8D3471B40DB50008EE53E /* SPRecordTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPRecordTableCell.h; path = SPMyRecordView/SPRecordTableCell.h; sourceTree = "<group>"; };
+		5BD8D3481B40DB50008EE53E /* SPRecordTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPRecordTableCell.m; path = SPMyRecordView/SPRecordTableCell.m; sourceTree = "<group>"; };
+		5BD8D34A1B40DF11008EE53E /* SPGlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGlobalData.h; sourceTree = "<group>"; };
+		5BD8D34B1B40DF11008EE53E /* SPGlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGlobalData.m; sourceTree = "<group>"; };
+		604AA5959B562483E1A9BAF4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ACDB43C8249C464B93FEB1BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E873DB11C2B94ED4DF37C7EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B304C401B40AF85003FDEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B18CD441B40C16000EB93F5 /* libopencore-amrnb.a in Frameworks */,
+				5B18CD451B40C16000EB93F5 /* libopencore-amrwb.a in Frameworks */,
+				5B451C4A1B40BFCC00ECB952 /* Foundation.framework in Frameworks */,
+				5B451C481B40BFC400ECB952 /* UIKit.framework in Frameworks */,
+				5B304C931B40AFE6003FDEF9 /* AVFoundation.framework in Frameworks */,
+				07F322891193328DF305E47A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B304C591B40AF86003FDEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B304C641B40AF86003FDEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B322A2193FD748AB107068D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				604AA5959B562483E1A9BAF4 /* Pods.debug.xcconfig */,
+				ACDB43C8249C464B93FEB1BD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B304C3A1B40AF85003FDEF9 = {
+			isa = PBXGroup;
+			children = (
+				5B304C451B40AF86003FDEF9 /* SPRecorder */,
+				5B304C5F1B40AF86003FDEF9 /* SPRecorderTests */,
+				5B304C6A1B40AF86003FDEF9 /* SPRecorderUITests */,
+				5B304C441B40AF86003FDEF9 /* Products */,
+				1B322A2193FD748AB107068D /* Pods */,
+				69386C015FEDC24CDBDDAC97 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B304C441B40AF86003FDEF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B304C431B40AF86003FDEF9 /* SPRecorder.app */,
+				5B304C5C1B40AF86003FDEF9 /* SPRecorderTests.xctest */,
+				5B304C671B40AF86003FDEF9 /* SPRecorderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B304C451B40AF86003FDEF9 /* SPRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8D3431B40D478008EE53E /* Additions */,
+				5BD8D33C1B40D3B9008EE53E /* SPManageMod */,
+				5B451C2E1B40BF5200ECB952 /* VoiceConvert */,
+				5B451C271B40BA1600ECB952 /* CustomNavigationItem */,
+				5B4F71011B40B0AE00FBB992 /* SPGlobal */,
+				5B304C491B40AF86003FDEF9 /* AppDelegate.h */,
+				5B304C4A1B40AF86003FDEF9 /* AppDelegate.m */,
+				5B304C4C1B40AF86003FDEF9 /* ViewController.h */,
+				5B304C4D1B40AF86003FDEF9 /* ViewController.m */,
+				5B451C241B40B9FD00ECB952 /* SPBaseViewController.h */,
+				5B451C251B40B9FD00ECB952 /* SPBaseViewController.m */,
+				5B4F71041B40B23D00FBB992 /* LeftMenuView */,
+				5B451C141B40B7B400ECB952 /* SPMainView */,
+				5B451C181B40B8A700ECB952 /* SPMyRecord */,
+				5B451C191B40B8B200ECB952 /* SPMyProfile */,
+				5B451C1A1B40B8C500ECB952 /* SPAbout */,
+				5B304C4F1B40AF86003FDEF9 /* Main.storyboard */,
+				5B304C521B40AF86003FDEF9 /* Assets.xcassets */,
+				5B304C541B40AF86003FDEF9 /* LaunchScreen.storyboard */,
+				5B304C571B40AF86003FDEF9 /* Info.plist */,
+				5B304C461B40AF86003FDEF9 /* Supporting Files */,
+			);
+			path = SPRecorder;
+			sourceTree = "<group>";
+		};
+		5B304C461B40AF86003FDEF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B304C471B40AF86003FDEF9 /* main.m */,
+				5B451C0C1B40B4B400ECB952 /* SPRecorderPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B304C5F1B40AF86003FDEF9 /* SPRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B304C601B40AF86003FDEF9 /* SPRecorderTests.m */,
+				5B304C621B40AF86003FDEF9 /* Info.plist */,
+			);
+			path = SPRecorderTests;
+			sourceTree = "<group>";
+		};
+		5B304C6A1B40AF86003FDEF9 /* SPRecorderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B304C6B1B40AF86003FDEF9 /* SPRecorderUITests.m */,
+				5B304C6D1B40AF86003FDEF9 /* Info.plist */,
+			);
+			path = SPRecorderUITests;
+			sourceTree = "<group>";
+		};
+		5B451C141B40B7B400ECB952 /* SPMainView */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C151B40B7CD00ECB952 /* SPMainViewController.h */,
+				5B451C161B40B7CD00ECB952 /* SPMainViewController.m */,
+				5B18CD461B40C24500EB93F5 /* SPRecordHUD.h */,
+				5B18CD471B40C24500EB93F5 /* SPRecordHUD.m */,
+			);
+			name = SPMainView;
+			sourceTree = "<group>";
+		};
+		5B451C181B40B8A700ECB952 /* SPMyRecord */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C1B1B40B8EE00ECB952 /* SPMyRecordViewController.h */,
+				5B451C1C1B40B8EE00ECB952 /* SPMyRecordViewController.m */,
+				5BD8D3471B40DB50008EE53E /* SPRecordTableCell.h */,
+				5BD8D3481B40DB50008EE53E /* SPRecordTableCell.m */,
+			);
+			name = SPMyRecord;
+			sourceTree = "<group>";
+		};
+		5B451C191B40B8B200ECB952 /* SPMyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C1E1B40B90600ECB952 /* SPMyProfileViewController.h */,
+				5B451C1F1B40B90600ECB952 /* SPMyProfileViewController.m */,
+			);
+			name = SPMyProfile;
+			sourceTree = "<group>";
+		};
+		5B451C1A1B40B8C500ECB952 /* SPAbout */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C211B40B91F00ECB952 /* SPAboutViewController.h */,
+				5B451C221B40B91F00ECB952 /* SPAboutViewController.m */,
+			);
+			name = SPAbout;
+			sourceTree = "<group>";
+		};
+		5B451C271B40BA1600ECB952 /* CustomNavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C281B40BA1600ECB952 /* CustomBarItem.h */,
+				5B451C291B40BA1600ECB952 /* CustomBarItem.m */,
+				5B451C2A1B40BA1600ECB952 /* UINavigationItem+CustomItem.h */,
+				5B451C2B1B40BA1600ECB952 /* UINavigationItem+CustomItem.m */,
+			);
+			path = CustomNavigationItem;
+			sourceTree = "<group>";
+		};
+		5B451C2E1B40BF5200ECB952 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C2F1B40BF5200ECB952 /* amrwapper */,
+				5B451C341B40BF5200ECB952 /* ChatCacheFileUtil.h */,
+				5B451C351B40BF5200ECB952 /* ChatCacheFileUtil.m */,
+				5B451C361B40BF5200ECB952 /* lib */,
+				5B451C391B40BF5200ECB952 /* opencore-amrnb */,
+				5B451C3C1B40BF5200ECB952 /* opencore-amrwb */,
+				5B451C3F1B40BF5200ECB952 /* VoiceConverter.h */,
+				5B451C401B40BF5200ECB952 /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		5B451C2F1B40BF5200ECB952 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C301B40BF5200ECB952 /* amrFileCodec.h */,
+				5B451C311B40BF5200ECB952 /* amrFileCodec.mm */,
+				5B451C321B40BF5200ECB952 /* wav.h */,
+				5B451C331B40BF5200ECB952 /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		5B451C361B40BF5200ECB952 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C371B40BF5200ECB952 /* libopencore-amrnb.a */,
+				5B451C381B40BF5200ECB952 /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		5B451C391B40BF5200ECB952 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C3A1B40BF5200ECB952 /* interf_dec.h */,
+				5B451C3B1B40BF5200ECB952 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		5B451C3C1B40BF5200ECB952 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C3D1B40BF5200ECB952 /* dec_if.h */,
+				5B451C3E1B40BF5200ECB952 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		5B4F71011B40B0AE00FBB992 /* SPGlobal */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8D34A1B40DF11008EE53E /* SPGlobalData.h */,
+				5BD8D34B1B40DF11008EE53E /* SPGlobalData.m */,
+				5B4F71021B40B0AE00FBB992 /* SPBlockTypeDef.h */,
+				5B4F71031B40B0AE00FBB992 /* SPGlobalDefine.h */,
+			);
+			path = SPGlobal;
+			sourceTree = "<group>";
+		};
+		5B4F71041B40B23D00FBB992 /* LeftMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F71051B40B23D00FBB992 /* SPLeftMenuViewController.h */,
+				5B4F71061B40B23D00FBB992 /* SPLeftMenuViewController.m */,
+			);
+			path = LeftMenuView;
+			sourceTree = "<group>";
+		};
+		5BD8D33C1B40D3B9008EE53E /* SPManageMod */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8D33D1B40D3DF008EE53E /* SPDBManager.h */,
+				5BD8D33E1B40D3DF008EE53E /* SPDBManager.m */,
+				5BD8D3441B40D5DC008EE53E /* SPRecordDataModel.h */,
+				5BD8D3451B40D5DC008EE53E /* SPRecordDataModel.m */,
+			);
+			name = SPManageMod;
+			sourceTree = "<group>";
+		};
+		5BD8D3431B40D478008EE53E /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8D3401B40D473008EE53E /* NSString+Additions.h */,
+				5BD8D3411B40D473008EE53E /* NSString+Additions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		69386C015FEDC24CDBDDAC97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B451C491B40BFCC00ECB952 /* Foundation.framework */,
+				5B451C471B40BFC400ECB952 /* UIKit.framework */,
+				5B304C921B40AFE6003FDEF9 /* AVFoundation.framework */,
+				E873DB11C2B94ED4DF37C7EE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B304C421B40AF85003FDEF9 /* SPRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B304C701B40AF86003FDEF9 /* Build configuration list for PBXNativeTarget "SPRecorder" */;
+			buildPhases = (
+				0C90B0F4D7E7916BD49A134B /* Check Pods Manifest.lock */,
+				5B304C3F1B40AF85003FDEF9 /* Sources */,
+				5B304C401B40AF85003FDEF9 /* Frameworks */,
+				5B304C411B40AF85003FDEF9 /* Resources */,
+				3B7C1897425969006FB75E82 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPRecorder;
+			productName = SPRecorder;
+			productReference = 5B304C431B40AF86003FDEF9 /* SPRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B304C5B1B40AF86003FDEF9 /* SPRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B304C731B40AF86003FDEF9 /* Build configuration list for PBXNativeTarget "SPRecorderTests" */;
+			buildPhases = (
+				5B304C581B40AF86003FDEF9 /* Sources */,
+				5B304C591B40AF86003FDEF9 /* Frameworks */,
+				5B304C5A1B40AF86003FDEF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B304C5E1B40AF86003FDEF9 /* PBXTargetDependency */,
+			);
+			name = SPRecorderTests;
+			productName = SPRecorderTests;
+			productReference = 5B304C5C1B40AF86003FDEF9 /* SPRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B304C661B40AF86003FDEF9 /* SPRecorderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B304C761B40AF86003FDEF9 /* Build configuration list for PBXNativeTarget "SPRecorderUITests" */;
+			buildPhases = (
+				5B304C631B40AF86003FDEF9 /* Sources */,
+				5B304C641B40AF86003FDEF9 /* Frameworks */,
+				5B304C651B40AF86003FDEF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B304C691B40AF86003FDEF9 /* PBXTargetDependency */,
+			);
+			name = SPRecorderUITests;
+			productName = SPRecorderUITests;
+			productReference = 5B304C671B40AF86003FDEF9 /* SPRecorderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B304C3B1B40AF85003FDEF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = roselife;
+				TargetAttributes = {
+					5B304C421B40AF85003FDEF9 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 84BQ5FDC7L;
+					};
+					5B304C5B1B40AF86003FDEF9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 5B304C421B40AF85003FDEF9;
+					};
+					5B304C661B40AF86003FDEF9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 5B304C421B40AF85003FDEF9;
+					};
+				};
+			};
+			buildConfigurationList = 5B304C3E1B40AF85003FDEF9 /* Build configuration list for PBXProject "SPRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B304C3A1B40AF85003FDEF9;
+			productRefGroup = 5B304C441B40AF86003FDEF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B304C421B40AF85003FDEF9 /* SPRecorder */,
+				5B304C5B1B40AF86003FDEF9 /* SPRecorderTests */,
+				5B304C661B40AF86003FDEF9 /* SPRecorderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B304C411B40AF85003FDEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B304C561B40AF86003FDEF9 /* LaunchScreen.storyboard in Resources */,
+				5B304C531B40AF86003FDEF9 /* Assets.xcassets in Resources */,
+				5B304C511B40AF86003FDEF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B304C5A1B40AF86003FDEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B304C651B40AF86003FDEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C90B0F4D7E7916BD49A134B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B7C1897425969006FB75E82 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B304C3F1B40AF85003FDEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD8D3491B40DB50008EE53E /* SPRecordTableCell.m in Sources */,
+				5B451C461B40BF5200ECB952 /* VoiceConverter.mm in Sources */,
+				5B451C431B40BF5200ECB952 /* ChatCacheFileUtil.m in Sources */,
+				5B451C421B40BF5200ECB952 /* wav.mm in Sources */,
+				5BD8D34C1B40DF11008EE53E /* SPGlobalData.m in Sources */,
+				5BD8D33F1B40D3DF008EE53E /* SPDBManager.m in Sources */,
+				5B451C201B40B90600ECB952 /* SPMyProfileViewController.m in Sources */,
+				5BD8D3461B40D5DC008EE53E /* SPRecordDataModel.m in Sources */,
+				5B304C4E1B40AF86003FDEF9 /* ViewController.m in Sources */,
+				5B451C171B40B7CD00ECB952 /* SPMainViewController.m in Sources */,
+				5B451C2C1B40BA1600ECB952 /* CustomBarItem.m in Sources */,
+				5B304C4B1B40AF86003FDEF9 /* AppDelegate.m in Sources */,
+				5B304C481B40AF86003FDEF9 /* main.m in Sources */,
+				5B451C1D1B40B8EE00ECB952 /* SPMyRecordViewController.m in Sources */,
+				5BD8D3421B40D473008EE53E /* NSString+Additions.m in Sources */,
+				5B451C261B40B9FD00ECB952 /* SPBaseViewController.m in Sources */,
+				5B18CD481B40C24500EB93F5 /* SPRecordHUD.m in Sources */,
+				5B4F71071B40B23D00FBB992 /* SPLeftMenuViewController.m in Sources */,
+				5B451C411B40BF5200ECB952 /* amrFileCodec.mm in Sources */,
+				5B451C231B40B91F00ECB952 /* SPAboutViewController.m in Sources */,
+				5B451C2D1B40BA1600ECB952 /* UINavigationItem+CustomItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B304C581B40AF86003FDEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B304C611B40AF86003FDEF9 /* SPRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B304C631B40AF86003FDEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B304C6C1B40AF86003FDEF9 /* SPRecorderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B304C5E1B40AF86003FDEF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B304C421B40AF85003FDEF9 /* SPRecorder */;
+			targetProxy = 5B304C5D1B40AF86003FDEF9 /* PBXContainerItemProxy */;
+		};
+		5B304C691B40AF86003FDEF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B304C421B40AF85003FDEF9 /* SPRecorder */;
+			targetProxy = 5B304C681B40AF86003FDEF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B304C4F1B40AF86003FDEF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B304C501B40AF86003FDEF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B304C541B40AF86003FDEF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B304C551B40AF86003FDEF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B304C6E1B40AF86003FDEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5B304C6F1B40AF86003FDEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B304C711B40AF86003FDEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604AA5959B562483E1A9BAF4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/SPRecorder/SPRecorderPrefixHeader.pch";
+				INFOPLIST_FILE = SPRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/SPRecorder/VoiceConvert/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roselife.SPRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B304C721B40AF86003FDEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDB43C8249C464B93FEB1BD /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/SPRecorder/SPRecorderPrefixHeader.pch";
+				INFOPLIST_FILE = SPRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/SPRecorder/VoiceConvert/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roselife.SPRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5B304C741B40AF86003FDEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SPRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roselife.SPRecorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPRecorder.app/SPRecorder";
+			};
+			name = Debug;
+		};
+		5B304C751B40AF86003FDEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SPRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roselife.SPRecorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPRecorder.app/SPRecorder";
+			};
+			name = Release;
+		};
+		5B304C771B40AF86003FDEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SPRecorderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roselife.SPRecorderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SPRecorder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5B304C781B40AF86003FDEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SPRecorderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roselife.SPRecorderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SPRecorder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B304C3E1B40AF85003FDEF9 /* Build configuration list for PBXProject "SPRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B304C6E1B40AF86003FDEF9 /* Debug */,
+				5B304C6F1B40AF86003FDEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B304C701B40AF86003FDEF9 /* Build configuration list for PBXNativeTarget "SPRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B304C711B40AF86003FDEF9 /* Debug */,
+				5B304C721B40AF86003FDEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B304C731B40AF86003FDEF9 /* Build configuration list for PBXNativeTarget "SPRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B304C741B40AF86003FDEF9 /* Debug */,
+				5B304C751B40AF86003FDEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B304C761B40AF86003FDEF9 /* Build configuration list for PBXNativeTarget "SPRecorderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B304C771B40AF86003FDEF9 /* Debug */,
+				5B304C781B40AF86003FDEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B304C3B1B40AF85003FDEF9 /* Project object */;
+}
