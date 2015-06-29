@@ -17,6 +17,8 @@
     
     NSMutableArray *audioArray;
     AVAudioPlayer *audioPlayer;
+    
+    UIButton *playBtn;
 }
 
 @end
@@ -53,6 +55,9 @@
 }
 
 - (void)playBtnClicked:(UIButton *)sender {
+    if (playBtn != nil && playBtn != sender) {
+        playBtn.selected = NO;
+    }
     if (sender.selected) {
         [self audioStop];
     } else {
@@ -60,6 +65,7 @@
         [self audioPlay:data.recordAddr];
     }
     sender.selected = !sender.selected;
+    playBtn = sender;
 }
 
 - (BOOL)tableView:(nonnull UITableView *)tableView canEditRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -130,7 +136,8 @@
 
 #pragma mark -
 #pragma mark - AVAudioDelegate
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    playBtn.selected = !playBtn.selected;
     [[UIDevice currentDevice] setProximityMonitoringEnabled:NO];
 }
 

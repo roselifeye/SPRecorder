@@ -30,10 +30,10 @@
             self.recordInfoDB = [FMDatabase databaseWithPath:_recordDBPath];
             if ([_recordInfoDB open]) {
                 [_recordInfoDB setShouldCacheStatements:YES];
-            }else{
+            } else {
                 NSLog(@"Fail to open DB customerInfo.db!!");
             }
-        }else {
+        } else {
             if (![fileManager fileExistsAtPath:[[NSString getDocumentDirectory] stringByAppendingPathComponent:DB_FOLDER]]) {
                 [fileManager createDirectoryAtPath:[[NSString getDocumentDirectory] stringByAppendingPathComponent:DB_FOLDER]
                        withIntermediateDirectories:YES attributes:nil error:nil];
@@ -74,17 +74,17 @@
     __block BOOL result = NO;
     
     [self.recordDBQueue inTransaction:^(FMDatabase *db, BOOL *rollback) {
-        [db open];
+        //[db open];
         NSString *sql = @"INSERT INTO RecordInfoList (recordDate, recordAuthor, recordAddr, recordLenth) values(?, ?, ?, ?)";
-        [_recordInfoDB executeUpdate:sql, info.recordDate, info.recordAuthor, info.recordAddr, info.recordLenth];
+        [db executeUpdate:sql, info.recordDate, info.recordAuthor, info.recordAddr, info.recordLenth];
         
-        if ([_recordInfoDB hadError]) {
-            NSLog(@"Fail to insert RecordInfoList to recordInfo.sqlite, %d, %@", [_recordInfoDB lastErrorCode], [_recordInfoDB lastErrorMessage]);
+        if ([db hadError]) {
+            NSLog(@"Fail to insert RecordInfoList to recordInfo.sqlite, %d, %@", [db lastErrorCode], [db lastErrorMessage]);
             *rollback = YES;
             result = NO;
         }
         result = YES;
-        [db close];
+        //[db close];
     }];
 
     return result;
@@ -93,9 +93,9 @@
 - (NSMutableArray *)queryAllRecordInfos {
     __block NSMutableArray *newsInfoArray = [[NSMutableArray alloc] init];
     [self.recordDBQueue inDatabase:^(FMDatabase *db) {
-        [db open];
+        //[db open];
         NSString *sql = @"SELECT * FROM RecordInfoList order by recordDate desc";
-        FMResultSet *resultSet = [_recordInfoDB executeQuery:sql];
+        FMResultSet *resultSet = [db executeQuery:sql];
         while([resultSet next]) {
             SPRecordDataModel *info = [[SPRecordDataModel alloc] init];
             info.recordDate = [resultSet stringForColumn:@"recordDate"];
@@ -110,7 +110,7 @@
         if (0 == [newsInfoArray count]) {
             newsInfoArray = nil;
         }
-        [db close];
+        //[db close];
     }];
     return newsInfoArray;
 }
@@ -118,16 +118,16 @@
 - (BOOL)deleteRecordInfoWithAddr:(NSString *)recordAddr {
     __block BOOL result = NO;
     [self.recordDBQueue inTransaction:^(FMDatabase *db, BOOL *rollback) {
-        [db open];
+        //[db open];
         NSString *sql = @"DELETE FROM RecordInfoList WHERE recordAddr = ?";
-        [_recordInfoDB executeUpdate:sql, recordAddr];
-        if ([_recordInfoDB hadError]) {
-            NSLog(@"Fail to insert RecordInfoList to recordInfo.sqlite, %d, %@", [_recordInfoDB lastErrorCode], [_recordInfoDB lastErrorMessage]);
+        [db executeUpdate:sql, recordAddr];
+        if ([db hadError]) {
+            NSLog(@"Fail to insert RecordInfoList to recordInfo.sqlite, %d, %@", [db lastErrorCode], [_recordInfoDB lastErrorMessage]);
             *rollback = YES;
             result = NO;
         }
         result = YES;
-        [db close];
+        //[db close];
 
     }];
     
